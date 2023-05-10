@@ -41,23 +41,21 @@ class PostListItem extends StatelessWidget {
           ),
           Row(
             children: [
-              ElevatedButton(
-                onPressed: onEditClick, // will come from parent
-                child: const Icon(
-                  Icons.edit,
-                  color: Colors.black,
-                ),
-              ),
+              IconButton(
+                  onPressed: onEditClick,
+                  icon: const Icon(
+                    Icons.edit,
+                    color: Colors.black,
+                  )),
               const SizedBox(
                 width: 2,
               ),
-              ElevatedButton(
-                onPressed: onDeleteClick, // will come from parent
-                child: const Icon(
-                  Icons.delete,
-                  color: Colors.black,
-                ),
-              ),
+              IconButton(
+                  onPressed: onDeleteClick,
+                  icon: const Icon(
+                    Icons.delete,
+                    color: Colors.black,
+                  )),
             ],
           )
         ],
